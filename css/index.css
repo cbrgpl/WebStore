@@ -1,0 +1,320 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hzg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Montserrat Medium'), local('Montserrat-Medium'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_ZpC3g3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_bZF3g3D-w.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v14/JTURjIg1_i6t8kCHKm45_dJE3g3D-w.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  height: 10000px;
+}
+.slick-active {
+  outline: none;
+}
+.slick-dots {
+  bottom: 0;
+}
+.slick-dots li button::before {
+  color: white;
+  font-size: 16px;
+  opacity: 0.5;
+}
+.slick-dots li.slick-active button::before {
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+}
+.page {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  box-shadow: 0 5px 2px 0 rgba(255, 255, 255, 0.7);
+}
+.inner {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+}
+.company_menu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+}
+.company_menu .icon {
+  display: inline-block;
+  width: 15%;
+  height: 100%;
+  background: black;
+  margin-right: 4%;
+}
+.company_menu .link {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.0625em;
+  margin-right: 2%;
+}
+.company_menu .phone {
+  margin-left: auto;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.pre-phone {
+  display: inline-block;
+  font-size: 0.55em;
+  font-weight: 400;
+  color: #666666;
+}
+.client_menu {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+.client_menu .link {
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-right: 2.5%;
+  color: #000;
+  text-decoration: none;
+}
+.link:hover {
+  color: #666;
+}
+.btn {
+  border-radius: 30px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background: #ff0048;
+  padding: 0 5px;
+  cursor: pointer;
+}
+.btn::selection,
+.btn::-moz-selection {
+  background: none;
+}
+.menu__btn {
+  width: 15%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 1.125em;
+  margin-left: auto;
+}
+.slideshow {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.slide-list {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+}
+.slide {
+  position: relative;
+  display: inline-block;
+  width: 100vw;
+  height: 700px;
+  padding: 35px 0;
+  overflow: hidden;
+}
+.slide-number-1 {
+  background-image: url(../img/slider/slide1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.slide-number-2 {
+  background: green;
+}
+.slide-number-3 {
+  background: black;
+}
+.slide-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide__subtitle {
+  width: 50%;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: #fff;
+  letter-spacing: -1px;
+}
+.slide__content {
+  width: 45%;
+  margin-top: 35px;
+  color: #fff;
+  line-height: 1.5rem;
+}
+.slide__btn {
+  display: inline-block;
+  width: 15%;
+  height: 60px;
+  line-height: 60px;
+  margin: 30px 25px auto auto;
+}
+.slide__btn:hover {
+  background: #000;
+  color: #fff;
+  border: none;
+  line-height: 60px;
+}
+.btn_background_white {
+  color: #000;
+  background: #fff;
+}
+.btn_background_transparent {
+  background: transparent;
+  border: 5px solid #fff;
+  line-height: 50px;
+}
+.nav-dots {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 20px;
+}
+.service {
+  margin-top: 75px;
+}
+.service__title {
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: 700;
+}
+.service__subtitle {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 25px;
+}
+.service__jobs {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+}
+.job {
+  display: inline-block;
+  width: 23%;
+}
+.job-img {
+  margin-bottom: 35px;
+}
+.service__name {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ff0048;
+}
+.service__name span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.service__name span:hover {
+  color: #999;
+}
+.service__content {
+  line-height: 1.5em;
+  margin-top: 25px;
+}
+.projects {
+  background: #eeeeee;
+}
+.projects__title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+.projects__title:after {
+  content: '';
+  display: block;
+  margin: 30px auto;
+  width: 90px;
+  height: 4px;
+  background: red;
+}
+.projects__example {
+  display: flex;
+  justify-content: space-between;
+}
+.project {
+  width: 30%;
+}
+.project:hover {
+  background: red;
+}
+.project:hover .project__name,
+.project:hover .project__subtitle {
+  color: #fff;
+}
+.project:hover .project__img .img {
+  transform: scale(1.1);
+}
+.project__img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+.project__img .img {
+  width: 100%;
+  height: 100%;
+  transition: all 500ms;
+}
+.project__img .img_number_1 {
+  background-image: url(../img/projects/project1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project__img .img_number_2 {
+  background-image: url(../img/projects/project1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project__img .img_number_3 {
+  background-image: url(../img/projects/project1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project__name {
+  display: inline-block;
+  color: red;
+  font-weight: 600;
+  border-bottom: 1px solid red;
+  font-size: 0.925em;
+  margin: 20px auto 20px 15px;
+}
+.project__subtitle {
+  font-size: 0.875em;
+  color: #999999;
+  margin: auto auto 20px 15px;
+}
+/*# sourceMappingURL=index.css.map */
